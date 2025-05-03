@@ -13,7 +13,6 @@ export function SkillsSection() {
     { id: "all", name: "All Skills" },
     { id: "frontend", name: "Frontend" },
     { id: "backend", name: "Backend" },
-    { id: "ai", name: "AI" },
     { id: "tools", name: "Tools" }
   ];
 
@@ -33,9 +32,21 @@ export function SkillsSection() {
 
         <Tabs defaultValue="all" value={activeCategory} onValueChange={setActiveCategory} className="w-full">
           <div className="flex justify-center mb-8">
-            <TabsList className="grid grid-cols-2 md:grid-cols-5">
+            <TabsList
+              className="
+                flex
+                flex-row
+                gap-x-2
+                overflow-x-auto
+                w-full
+                md:grid md:grid-cols-4 md:gap-x-0
+                scrollbar-hide
+                px-1
+              "
+              style={{ WebkitOverflowScrolling: "touch" }}
+            >
               {categories.map(category => (
-                <TabsTrigger key={category.id} value={category.id}>
+                <TabsTrigger key={category.id} value={category.id} className="whitespace-nowrap">
                   {category.name}
                 </TabsTrigger>
               ))}

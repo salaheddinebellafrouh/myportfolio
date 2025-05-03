@@ -28,7 +28,7 @@ export interface Education {
 
 export interface Skill {
   name: string;
-  category: 'frontend' | 'backend' | 'ai' | 'tools' | 'other';
+  category: 'frontend' | 'backend' | 'tools' | 'other';
   level: number; // 1-5 skill level
 }
 
@@ -36,7 +36,7 @@ export const projects: Project[] = [
   {
     id: 'norncoinai',
     title: 'NornCoin AI',
-    description: 'A meme coin website with dashboard functionality, featuring real-time data visualization and interactive elements.',
+    description: 'A meme coin website with dashboard functionality, featuring interactive elements.',
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'GSAP'],
     image: 'https://images.pexels.com/photos/7567486/pexels-photo-7567486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     link: 'https://www.norncoinai.com/',
@@ -61,6 +61,7 @@ export const projects: Project[] = [
     image: 'https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     category: 'personal',
     featured: true,
+    github: 'https://github.com/yuxev/ft_transcendence',
   },
   {
     id: 'inception',
@@ -70,6 +71,7 @@ export const projects: Project[] = [
     image: 'https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     category: 'personal',
     featured: true,
+    github: 'https://github.com/salaheddinebellafrouh/inc',
   },
   {
     id: 'web-server',
@@ -79,6 +81,7 @@ export const projects: Project[] = [
     image: 'https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     category: 'personal',
     featured: true,
+    github: 'https://github.com/selkhadr/webserv6',
   }
 ];
 

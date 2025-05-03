@@ -42,7 +42,7 @@ export function ProjectsSection() {
           </p>
         </div>
 
-        <div className="flex justify-center mb-8 space-x-2 gsap-fade-up">
+        <div className="flex justify-center mb-8 flex-wrap gap-2 gsap-fade-up">
           <Button
             variant={filter === "all" ? "default" : "outline"}
             onClick={() => setFilter("all")}
@@ -66,7 +66,7 @@ export function ProjectsSection() {
           </Button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gsap-stagger-container">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 gsap-stagger-container">
           {filteredProjects.map((project) => (
             <ProjectCard 
               key={project.id} 
@@ -94,10 +94,10 @@ interface ProjectCardProps {
 function ProjectCard({ project, onDetails }: ProjectCardProps) {
   return (
     <Card className={cn(
-      "overflow-hidden transition-all h-full flex flex-col gsap-stagger-item",
+      "overflow-hidden transition-all h-full flex flex-col rounded-lg gsap-stagger-item",
       project.featured ? "md:col-span-2 lg:col-span-1" : ""
     )}>
-      <div className="relative h-48">
+      <div className="relative min-h-[12rem] sm:h-48">
         <Image
           src={project.image}
           alt={project.title}
@@ -112,12 +112,12 @@ function ProjectCard({ project, onDetails }: ProjectCardProps) {
           </div>
         )}
       </div>
-      <CardContent className="pt-6 flex-grow">
-        <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-        <p className="text-muted-foreground mb-4 line-clamp-2">
+      <CardContent className="pt-4 pb-2 px-3 flex-grow">
+        <h3 className="text-lg font-bold mb-1">{project.title}</h3>
+        <p className="text-muted-foreground mb-3 text-sm line-clamp-2">
           {project.description}
         </p>
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="flex flex-wrap gap-2 mb-3">
           {project.technologies.slice(0, 3).map((tech) => (
             <Badge key={tech} variant="outline">
               {tech}
@@ -174,7 +174,7 @@ function ProjectDialog({ project, open, onClose }: ProjectDialogProps) {
           </DialogDescription>
         </DialogHeader>
         
-        <div className="relative h-64 my-4">
+        <div className="relative h-40 sm:h-64 my-4">
           <Image
             src={project.image}
             alt={project.title}
