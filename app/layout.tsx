@@ -6,8 +6,8 @@ import { ThemeProvider } from '@/components/theme-provider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Salah Eddine Bellafrouh | Full Stack Developer',
-  description: 'Full Stack Developer specializing in Next.js, TypeScript, and AI integration',
+  title: 'SALAH EDDINE BELLAFROUH | Full Stack Developer',
+  description: 'Full Stack Developer specializing in Next.js, C++, and FastAPI',
 };
 
 export default function RootLayout({
@@ -22,7 +22,7 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="system"
           enableSystem
-          disableTransitionOnChange={false}
+          disableTransitionOnChange
         >
           {children}
         </ThemeProvider>

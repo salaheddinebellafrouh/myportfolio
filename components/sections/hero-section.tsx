@@ -70,7 +70,7 @@ export function HeroSection() {
           className="flex justify-center gap-6 mb-16"
         >
           <Link 
-            href="https://github.com" 
+            href="https://github.com/salaheddinebellafrouh" 
             target="_blank" 
             rel="noopener noreferrer"
             className="p-2 rounded-full hover:bg-accent transition-colors"
@@ -79,7 +79,7 @@ export function HeroSection() {
             <span className="sr-only">GitHub</span>
           </Link>
           <Link 
-            href="https://linkedin.com" 
+            href="https://www.linkedin.com/in/sbellafr/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="p-2 rounded-full hover:bg-accent transition-colors"

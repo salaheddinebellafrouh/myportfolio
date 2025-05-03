@@ -116,7 +116,7 @@ export function ContactSection() {
                 <h3 className="font-medium mb-3">Connect</h3>
                 <div className="flex gap-4">
                   <Link 
-                    href="https://github.com" 
+                    href="https://github.com/salaheddinebellafrouh" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="p-2 rounded-full hover:bg-accent transition-colors"
@@ -125,7 +125,7 @@ export function ContactSection() {
                     <span className="sr-only">GitHub</span>
                   </Link>
                   <Link 
-                    href="https://linkedin.com" 
+                    href="https://www.linkedin.com/in/sbellafr/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="p-2 rounded-full hover:bg-accent transition-colors"

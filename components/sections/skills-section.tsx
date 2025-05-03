@@ -27,7 +27,7 @@ export function SkillsSection() {
         <div className="text-center mb-12 gsap-fade-up">
           <h2 className="text-3xl font-bold mb-4">Skills & Expertise</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            My technical toolkit and areas of expertise relevant to AI and full-stack development.
+            My technical toolkit and areas of expertise.
           </p>
         </div>
 
@@ -52,32 +52,6 @@ export function SkillsSection() {
             </TabsContent>
           ))}
         </Tabs>
-
-        <div className="mt-16 gsap-fade-up">
-          <h3 className="text-xl font-bold mb-6 text-center">Skills Relevant to AI Lab Position</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <HighlightCard
-              title="Next.js & React"
-              description="Advanced knowledge of Next.js for building modern, performant web applications with SSR and static generation."
-              skills={["Next.js", "React", "Server Components", "Client Components"]}
-            />
-            <HighlightCard
-              title="Python & Data Science"
-              description="Experience with Python for backend development and data processing applications."
-              skills={["Python", "Django", "FastAPI", "Data Processing"]}
-            />
-            <HighlightCard
-              title="Database & Vectors"
-              description="Knowledge of database systems including PostgreSQL and vector databases."
-              skills={["PostgreSQL", "SQL", "Database Design", "pgvector"]}
-            />
-            <HighlightCard
-              title="AI Integration"
-              description="Understanding of integrating AI models and services into web applications."
-              skills={["API Integration", "State Management", "Data Visualization"]}
-            />
-          </div>
-        </div>
       </div>
     </section>
   );
@@ -97,28 +71,6 @@ function SkillCard({ skill }: SkillCardProps) {
         </Badge>
       </div>
       <Progress value={skill.level * 20} className="h-2 mt-1" />
-    </Card>
-  );
-}
-
-interface HighlightCardProps {
-  title: string;
-  description: string;
-  skills: string[];
-}
-
-function HighlightCard({ title, description, skills }: HighlightCardProps) {
-  return (
-    <Card className="p-6 flex flex-col h-full">
-      <h3 className="text-lg font-bold mb-2">{title}</h3>
-      <p className="text-muted-foreground text-sm mb-4 flex-grow">{description}</p>
-      <div className="flex flex-wrap gap-2 mt-auto">
-        {skills.map(skill => (
-          <Badge key={skill} variant="secondary">
-            {skill}
-          </Badge>
-        ))}
-      </div>
     </Card>
   );
 }

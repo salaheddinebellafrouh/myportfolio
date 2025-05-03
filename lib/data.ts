@@ -54,18 +54,9 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: 'digital-agency-platform',
-    title: 'Modern Web Platform',
-    description: 'A comprehensive web platform for a digital agency with responsive and interactive UI, optimized performance with Server-Side Rendering (SSR) and static page generation.',
-    technologies: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'GSAP'],
-    image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    category: 'personal',
-    featured: true,
-  },
-  {
     id: 'pong-game',
     title: 'Transcendence – PONG GAME',
-    description: 'A real-time multiplayer game platform with user authentication (OAuth2), secure session management, and persistent data storage using PostgreSQL.',
+    description: 'Developed the backend of a real-time multiplayer game platform using Django and Python. Implemented user authentication (OAuth2) and integrated secure session management. Designed and managed a PostgreSQL database using Django ORM for persistent user and game data.',
     technologies: ['Django', 'Python', 'OAuth2', 'PostgreSQL'],
     image: 'https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     category: 'personal',
@@ -74,20 +65,20 @@ export const projects: Project[] = [
   {
     id: 'inception',
     title: 'Inception',
-    description: 'A full LEMP stack environment (Linux, NGINX, MariaDB, PHP) using Docker and Docker Compose with automated deployment of multiple containers.',
+    description: 'Built a full LEMP stack environment (Linux, NGINX, MariaDB, PHP) using Docker and Docker Compose. Automated the deployment of multiple containers including WordPress, phpMyAdmin, and a custom NGINX web server. Ensured services run in isolated environments using volume and network management features of Docker.',
     technologies: ['Docker', 'Docker Compose', 'NGINX', 'MariaDB', 'PHP', 'WordPress'],
     image: 'https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     category: 'personal',
-    featured: false,
+    featured: true,
   },
   {
     id: 'web-server',
     title: 'Web Server',
-    description: 'A simple web server built using C/C++ that handles multiple client requests simultaneously using networking and I/O techniques.',
+    description: 'Built a simple web server using C/C++. Handled multiple client requests simultaneously using networking and I/O techniques.',
     technologies: ['C/C++', 'Networking', 'I/O'],
     image: 'https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     category: 'personal',
-    featured: false,
+    featured: true,
   }
 ];
 
@@ -96,7 +87,7 @@ export const experiences: Experience[] = [
     title: 'Back End Intern',
     company: 'GoQuant',
     duration: '02/2025 - 04/2025',
-    location: 'Remote',
+    location: 'Remote - usa',
     description: [
       'Optimized back-end systems for faster order execution, real-time market data integration, and reliable trading strategy support.',
       'Documented back-end architecture to ensure scalability, maintainability, and smooth team collaboration.',
@@ -127,37 +118,28 @@ export const education: Education[] = [
 ];
 
 export const skills: Skill[] = [
-  { name: 'Next.js', category: 'frontend', level: 5 },
-  { name: 'TypeScript', category: 'frontend', level: 4 },
-  { name: 'React', category: 'frontend', level: 5 },
-  { name: 'Tailwind CSS', category: 'frontend', level: 5 },
-  { name: 'GSAP', category: 'frontend', level: 4 },
-  { name: 'JavaScript', category: 'frontend', level: 5 },
-  { name: 'CSS', category: 'frontend', level: 4 },
   { name: 'C/C++', category: 'backend', level: 4 },
-  { name: 'Python', category: 'backend', level: 4 },
-  { name: 'Django', category: 'backend', level: 3 },
-  { name: 'FastAPI', category: 'backend', level: 3 },
-  { name: 'PostgreSQL', category: 'backend', level: 3 },
-  { name: 'Docker', category: 'tools', level: 4 },
-  { name: 'Git', category: 'tools', level: 4 },
-  { name: 'AI Integration', category: 'ai', level: 3 },
-  { name: 'Machine Learning Basics', category: 'ai', level: 2 },
-  { name: 'TanStack Query', category: 'frontend', level: 3 },
-  { name: 'NestJS', category: 'backend', level: 3 },
+  { name: 'Django', category: 'backend', level: 4 },
+  { name: 'FastAPI', category: 'backend', level: 4 },
+  { name: 'CSS', category: 'frontend', level: 4 },
+  { name: 'GSAP', category: 'frontend', level: 4 },
+  { name: 'Next.js', category: 'frontend', level: 4 },
+  { name: 'Tailwind', category: 'frontend', level: 5 },
+  { name: 'TypeScript', category: 'frontend', level: 4 },
+  { name: 'GitHub', category: 'tools', level: 5 },
+  { name: 'JavaScript', category: 'frontend', level: 5 }
 ];
 
 export const aboutMe = {
-  name: 'Salah Eddine Bellafrouh',
+  name: 'SALAH EDDINE BELLAFROUH',
   title: 'Full Stack Developer',
   email: 'sbellafrouh@gmail.com',
   phone: '+212648299213',
-  location: 'ElHajeb, Morocco',
+  location: 'El Hajeb',
   summary: 'Passionate full stack developer with expertise in Next.js, C++, and FastAPI, focused on building high-performance, scalable applications. Combines strong technical skills with a user-centered approach and a collaborative mindset to deliver innovative software solutions.',
   languages: [
     { name: 'Arabic', level: 'Native' },
     { name: 'English', level: 'Proficient' },
     { name: 'French', level: 'Advanced' }
-  ],
-  interests: ['AI & Machine Learning', 'Web Development', 'Algorithmic Trading', 'Open Source']
+  ]
 };
