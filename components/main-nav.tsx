@@ -56,8 +56,8 @@ export function MainNav() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="text-xl font-bold">
-              <span className="text-primary">Salah</span>
-              <span className="text-muted-foreground">.dev</span>
+              <span className="text-primary">sbellafrouh</span>
+              <span className="text-muted-foreground">.software</span>
             </Link>
           </div>
 
