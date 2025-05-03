@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Progress } from "@/components/ui/progress";
+import { initScrollAnimations } from "@/lib/animations";
 
 export function SkillsSection() {
   const [activeCategory, setActiveCategory] = useState<string>("all");
@@ -19,6 +20,12 @@ export function SkillsSection() {
   const filteredSkills = allSkills.filter(skill => 
     activeCategory === "all" || skill.category === activeCategory
   ).sort((a, b) => b.level - a.level);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      initScrollAnimations();
+    }
+  }, [activeCategory]);
 
   return (
     <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
